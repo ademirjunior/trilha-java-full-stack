@@ -1,0 +1,82 @@
+body {
+    background-color: antiquewhite;
+}
+
+#titulo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#div-foto-perfil {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgb(245, 217, 183);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a.botao:hover {
+    background-color: #c8c9d0;
+}
+
+li {
+    font-size: large;
+    list-style: circle;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    font-size: large;
+}
+
+/**********FORMULARIO*************/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color: #223094;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c8c9d0;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: rgb(243, 223, 198);
+    padding: 20px;
+  }
+
+  #enviar {
+    display: flex;
+    justify-content: right;
+  }
