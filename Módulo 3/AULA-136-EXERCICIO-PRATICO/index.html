@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exercício Prático</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+    <h1>Exemplo de Título</h1>
+    <p>
+        Neste parágrafo estão sendo usandos elementos para emebelezar o texto.
+        <b>Aqui é um exemplo de negrito</b>
+        <i>Aqui é um exemplo de itálico</i>
+        <mark>Aqui é um exemplo de texto marcado</mark>
+    </p>
+    <hr>
+    <div>
+        <h2>Aqui são os elemento capturados no java script</h2>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+    </div>
+    <hr>
+    <hr>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">
+       Texto interativo.
+    </div>
+
+    <button onclick="displayDate()">Data de Hoje</button>
+    <p id="data"></p>
+
+    <hr>
+    <hr>
+    <h2>Formulário</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        Idade: <input type="number" name="fidade">
+        <input type="submit" value="enviar">
+   </form>
+    <script src="js/main.js"></script>
+</body> 
+</html> 

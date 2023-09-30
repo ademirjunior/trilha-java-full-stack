@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Casa da Música</title>
+</head>
+
+<body>
+
+  <div class="p-5 bg-dark text-white text-center">
+    <h1 class="display-1">Casa da Música</h1>
+    <p class="display-6">Um lugar para encontrar o som que combina com você</p>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-warning">
+    <div class="conatiner-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active text-dark">Guitarras</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active text-dark">Violões</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active text-dark">Baixos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>Sobre nós</h2>
+        <img class="img-fluid w-100" src="images/logo.jpeg" alt="">
+        <p>A casa da música nasceu o sonho de encontrar o lheor para cada músico.</p>
+
+        <h3 class="mt-4">Alguns Links</h3>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active bg-dark" href="https://www.fender.com/en/start">Site da Fender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark bg-light" href="https://www.ibanez.com/na/">Site da Ibanez</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white bg-dark" href="https://store.roland.com.br/">Site da Roland</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark bg-light" href="https://www.behringer.com/">Site da Behringer</a>
+          </li>
+        </ul>
+
+        <h3 class="mt-4">História da música</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tL3Vx6KTNJ0?si=RUaRiNfg1lDRbvT8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-sm-8">
+        <div class="card">
+          <h2>Guitarras Fender</h2>
+          <h5>As queridinhas dos músicos</h5>
+          <div id="demo" class="container mt-3 mb-3 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/fstrato.jpg" alt="Fender Stratocaster" class="d-block" style="width: 90%;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ftele.jpg" alt="Fender Telecaster" class="d-block" style="width: 90%;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fjaguar.jpg" alt="Fender Jaguar" class="d-block" style="width: 87%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <h4 class="text-center mt-3">Os 10 principais instrumentos que os pais desejam que os filhos aprendam</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Intrumento</th>
+                <th>Porcentagem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Piano/teclado</td>
+                <td>18%</td>
+              </tr>
+              <tr>
+                <td>Bateria</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>Violino</td>
+                <td>16%</td>
+              </tr>
+              <tr>
+                <td>Guitarra</td>
+                <td>15%</td>
+              </tr>
+              <tr>
+                <td>Violão</td>
+                <td>14%</td>
+              </tr>
+              <tr>
+                <td>Trompete</td>
+                <td>14%</td>
+              </tr>
+              <tr>
+                <td>Flauta</td>
+                <td>13%</td>
+              </tr>
+              <tr>
+                <td>Percussão</td>
+                <td>13%</td>
+              </tr>
+              <tr>
+                <td>Vocal</td>
+                <td>13%</td>
+              </tr>
+              <tr>
+                <td>Saxofone</td>
+                <td>13%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="accordion" class="mt-5 mb-5">
+          <h2>Motivos para aprender um intrumento musical</h2>
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne"> Melhora a capacidade de memorização</a>
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Uma pesquisa publicada na The Telegraph, e várias outras do meio científico, mostraram que tocar um instrumento musical melhora a capacidade de memorização. Segundo ela, ao tocar, os músicos estimulam áreas importantes do cérebro que não são estimuladas por pessoas que não tocam nenhum instrumento, e são regiões responsáveis pela memorização de informações.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">Torna você mais produtivo</a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Esse tipo de prática age diretamente na Função Executiva do cérebro. Essa é uma área responsável por execução de tarefas, tomada de decisões, resolução de problemas e seus relacionados. Pessoas que tocam algum tipo de instrumento musical com frequência e disciplina conseguem melhorar essas funções e, com isso, se tornam mais produtivas.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseThree">Aumenta a coordenação motora</a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Tocar instrumentos musicais, principalmente os que envolvem uma quantidade maior de movimentos em conjunto como bateria, violão e piano, também aumenta a coordenação motora.  Inclusive, essa é uma prática muito recomendada para o tratamento de doenças neurológicas e neurodegenerativas. Música também é saúde!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="text-center mt-3">As 10 guitarras mais vendidas de 2021</h3>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-light">Fender Player Telecaster</li>
+            <li class="list-group-item list-group-item-dark">Fender Player Stratocaster</li>
+            <li class="list-group-item list-group-item-light">PRS Silver Sky John Mayer Signature</li>
+            <li class="list-group-item list-group-item-dark">Squier Affinity Telecaster</li>
+            <li class="list-group-item list-group-item-light">Fender American Professional II Stratocaster</li>
+            <li class="list-group-item list-group-item-dark">PRS SE Custom 24</li>
+            <li class="list-group-item list-group-item-light">Fender American Professional II Telecaster</li>
+            <li class="list-group-item list-group-item-dark">Gibson Les Paul Standard 60s</li>
+            <li class="list-group-item list-group-item-light">Gibson Les Paul Standard 50s</li>
+            <li class="list-group-item list-group-item-dark">ESP LTD EC-1000</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted p-1 mt-3">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-6 col-md-6 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Casa da Música
+            </h6>
+            <p>
+              Aqui é o lugar onde você vai encontrar o melhor instrumeto para seu uso. Temos das mais vartiadas marcas,
+              desde o inciante até o profissional. Fazemos encomendas e também manutenção.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6 col-md-6 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
+            <p> Endereço: Praça da Imprensa, 55, Aracaju-SE, BR</p>
+            <p>
+              Email: casadamusica@gmail.com
+            </p>
+            <p> + 55 79 99673-5679</p>
+            <p> + 55 79 3248-5988</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 bg-dark">
+      <p class="text-white">© 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://casadamusica.com/">casadamusica.com</a>
+      </p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
