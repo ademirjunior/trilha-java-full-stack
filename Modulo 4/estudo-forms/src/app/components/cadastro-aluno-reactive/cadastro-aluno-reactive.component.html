@@ -1,0 +1,54 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="container my-5">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input id="nome" type="text" class="form-control" formControlName="nome"
+            [ngClass]="{'is-valid': nome.valid, 'is-invalid': nome.touched && nome.invalid}"
+        />
+        <div *ngIf="nome.touched && nome.invalid" class="invalid-feedback">Nome inválido!</div>
+        <div *ngIf="nome.valid" class="valid-feedback">Tudo ok!</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        {{email.errors | json}}
+        <input id="email" type="email" class="form-control" formControlName="email" 
+            [ngClass]="{'is-valid': email.valid, 'is-invalid': email.touched && email.invalid}"
+        />
+        <div *ngIf="email.touched && email.invalid" class="invalid-feedback">Email inválido!</div>
+        <div *ngIf="email.valid" class="valid-feedback">Tudo ok!</div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="nivel">Nível de Ensino</label>
+        <select id="nivel" class="form-select" name="nivel" formControlName="nivel"
+            [ngClass]="{'is-valid': nivel.valid, 'is-invalid': nivel.touched && nivel.invalid}"
+        >
+            <option selected disabled value="">Selecione um nível</option>
+            <option value="1">Ensino Fundamental I</option>
+            <option value="2">Ensino Fundamental II</option>
+            <option value="3">Ensino Médio</option>
+        </select>
+        <div *ngIf="nivel.touched && nivel.invalid" class="invalid-feedback">Selecione uma opção!</div>
+        <div *ngIf="nivel.valid" class="valid-feedback">Tudo ok!</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="cidade" class="form-label">Cidade</label>
+        <input id="cidade" type="text" class="form-control" formControlName="cidade" 
+            [ngClass]="{'is-valid': cidade.valid, 'is-invalid': cidade.touched && cidade.invalid}"
+        />
+        <div *ngIf="cidade.touched && cidade.invalid" class="invalid-feedback">Cidade inválida!</div>
+        <div *ngIf="cidade.valid" class="valid-feedback">Tudo ok!</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="estado" class="form-label">Estado</label>
+        <input id="estado" type="text" class="form-control" formControlName="estado"
+            [ngClass]="{'is-valid': estado.valid, 'is-invalid': estado.touched && estado.invalid}"
+        />
+        <div *ngIf="estado.touched && estado.invalid" class="invalid-feedback">Apenas Sigla!</div>
+        <div *ngIf="estado.valid" class="valid-feedback">Tudo ok!</div>
+    </div>
+
+    <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Submit</button>
+</form>
