@@ -1,0 +1,31 @@
+<div class="input-group mb-3">
+    <input [(ngModel)]="cod" type="text" class="form-control" placeholder="Digite um código" />
+    <button [disabled]="!cod" class="btn btn-primary" (click)="irParaDetail()">Buscar</button>
+</div>
+
+<hr>
+<div class="d-flex justify-content-around align-items-center">
+
+    <table class="table w-75 mt-3">
+        <thead>
+            <tr>
+                <th>Cód.</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of produtos">
+                <td>{{prod.cod}}</td>
+                <td>{{prod.nome}}</td>
+                <td>{{prod.preco}}</td>
+                <td>
+                    <!--a routerLink="/produtos/{{prod.cod}}" class="btn btn-primary btn-sm">Ver mais</a-->
+                    <a [routerLink]="['/produtos-tabela', prod.cod]" class="btn btn-primary btn-sm">Ver mais</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <router-outlet></router-outlet>
+</div>

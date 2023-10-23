@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="input-group mb-3">
+
+        <input
+        [(ngModel)]="cod"
+        type="text"
+        class="form-control"
+        placeholder="Digite um código"
+        />
+        
+        <button [disabled]="!cod" class="btn btn-primary" (click)="irParaDetail()">Buscar</button>
+    </div>
+    
+    <div *ngFor="let prod of produtos" class="card mb-3" style="width: 18rem;">
+        <img [src]="prod.imagem" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{prod.nome}}</h5>
+            <b>{{prod.preco}}</b>
+            <p class="card-text">{{prod.descricao}}</p>
+            <a routerLink="/produtos/{{prod.cod}}" class="btn btn-primary">Ver produto</a>
+        </div>
+    </div>
+
+</div>
