@@ -1,0 +1,32 @@
+.table-alunos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-alunos td,
+.table-alunos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-alunos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: teal;
+    color: white;
+}
+
+.aprovado {
+    color: green;
+}
+
+.reprovado {
+    color: red;
+    font-weight: bold;
+}
+
+.acima {
+    border: 2px dashed green;
+}

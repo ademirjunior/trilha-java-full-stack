@@ -1,0 +1,82 @@
+<p *ngIf="estaLigado; else desligado">Servidor está ligado</p>
+
+<ng-template #desligado>
+    <p>O Servidor está desligado!</p>
+</ng-template>
+
+<button (click)="toggle()">
+    Ligar/Desligar
+</button>
+
+<hr>
+
+<p>{{counter}}</p>
+<p *ngIf="counter > 5">Maior que 5</p>
+<p *ngIf="counter % 2 == 0; else impar">Este número é par!</p>
+<ng-template #impar>
+    <p>Este número é ímpar!</p>
+</ng-template>
+<button (click)="incrementar()">Incrementar</button>
+
+<hr>
+
+<h4>Lista de Compras!</h4>
+<ul>
+    <li *ngFor="let produto of listaCompras" >{{produto}}</li>
+</ul>
+
+<hr>
+
+<table class="table-alunos">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Média</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of alunos; index as i"
+            [ngStyle]="{'background-color': i % 2 == 0 ? '#f2f2f2' : 'white'}"
+            [ngClass]="{'acima': aluno.media >= 7.5 && aluno.media <= 10}"
+        >
+            <td>{{i + 1}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+            <td [ngClass]="{'aprovado': aluno.media >= 7, 'reprovado': aluno.media < 7}">
+                {{aluno.media}}
+            </td>
+            <td>
+                <button [disabled]="aluno.media > 7" (click)="alertar(aluno)">Alertar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<br>
+
+<select [(ngModel)]="opcaoSelecionada">
+    <option value="nehum">Nehum</option>
+    <option *ngFor="let opc of opcoes" [value]="opc">
+    {{opc}}
+    </option>
+</select>
+
+<br>
+<br>
+
+<div [ngSwitch]="opcaoSelecionada">
+    <img
+        *ngSwitchCase="'gatinho'" 
+        src="https://www.zooplus.pt/magazine/wp-content/uploads/2021/03/kitten-sitzt-boden-768x512-1.jpeg" 
+        alt="Gatinho" />
+    <img
+        *ngSwitchCase="'cachorrinho'" 
+        src="https://img.freepik.com/fotos-premium/pequeno-cachorrinho-fofo-de-um-abrigo-de-animais_231786-7328.jpg" 
+        alt="Cachorrinho"/>
+    <p *ngSwitchCase="'nenhum'">Você precisa selecionar!</p>
+    <p *ngSwitchDefault>Opção inválida!</p>
+</div>

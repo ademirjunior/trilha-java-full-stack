@@ -1,0 +1,15 @@
+<h3>Produtos</h3>
+<hr>
+<input class="form-control" type="text" placeholder="Digite o nome do produto" [(ngModel)]="query">
+<button class="btn btn-primary" (click)="pesquisar()">Pesquisar {{query}}</button>
+
+<div class="container">
+    <p>Produtos no carrinho: {{carrinho.length}}</p>
+    <app-produto 
+        *ngFor="let produto of produtos" 
+        [produto]="produto"
+        (onCarrinho)="adicionarProduto($event)"
+    >
+    <small *ngIf="existeNoCarrinho(produto)">O produto está no carrinho</small>
+    </app-produto>
+</div>

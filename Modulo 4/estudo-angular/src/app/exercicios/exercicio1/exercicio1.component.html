@@ -1,0 +1,18 @@
+<div>
+    <h3>Exercício 1</h3>
+    <input 
+        type="text" 
+        placeholder="Nome"
+        [(ngModel)]="nome" 
+    >
+    
+    <input 
+        type="text"
+        placeholder="Sobrenome"
+        [(ngModel)]="sobrenome" 
+    >
+    <br>
+    <p>Nome Completo: {{nome + ' ' + sobrenome}}</p>
+    <p>Iniciais: {{getIniciais()}} </p>
+    <p>Soma das letras: {{nome.length + sobrenome.length}} </p>
+</div>
